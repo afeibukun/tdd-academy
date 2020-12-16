@@ -19,10 +19,11 @@
                 </button>
             </div>
             <div
-                class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
+                class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none lg:static absolute top-16 left-0 w-screen lg:w-auto"
                 v-bind:class="{'hidden': !showMenu, 'block': showMenu}"
             >
-                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                <ul
+                    class="flex flex-col lg:flex-row list-none lg:ml-auto">
                     <li class="flex items-center">
                         <jet-nav-link :href="route('home')" :active="route().current('home')"
                                       class="px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">Home

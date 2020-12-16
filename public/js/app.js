@@ -2069,6 +2069,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -46572,7 +46573,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none",
+                "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none lg:static absolute top-16 left-0 w-screen lg:w-auto",
               class: { hidden: !_vm.showMenu, block: _vm.showMenu }
             },
             [
