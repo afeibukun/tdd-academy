@@ -17,6 +17,14 @@ Route::get('/', function () {
     return Inertia\Inertia::render('Public/Home');
 })->name('home');
 
+Route::get('/login', function () {
+    return Inertia\Inertia::render('Public/Login');
+})->name('login');
+
+Route::get('/register', function () {
+   return Inertia\Inertia::render('Public/Register');
+})->name('register');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');

@@ -15,78 +15,22 @@
                     </div>
 
                     <!-- Left hand Side -->
-                    <div class="hidden sm:flex sm:items-center sm:ml-6">
+                    <div class="flex items-center ml-6">
                         <!-- Desktop Navigation Links -->
                         <ul class="sm:flex sm:items-center">
                             <li>
-                                <jet-nav-link :href="route('home')" :active="route().current('home')" class="px-5">Home
-                                </jet-nav-link>
-                            </li>
-                            <li>
-                                <jet-nav-link href="#menu-1" class="px-5">Menu 1
-                                </jet-nav-link>
-                            </li>
-                            <li>
-                                <jet-nav-link href="#menu-2" class="px-5">Menu 2
-                                </jet-nav-link>
-                            </li>
-                            <li >
-                                <jet-nav-link href="#menu-3" class="px-5">Menu 3
+                                <jet-nav-link :href="route('home')" :active="route().current('home')" class="px-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                                    </svg>
+                                    Back
                                 </jet-nav-link>
                             </li>
                         </ul>
                     </div>
-
-                    <!-- Hamburger -->
-                    <div class="-mr-2 flex items-center sm:hidden">
-                        <!-- Menu Toggle Button -->
-                        <button type="button" @click="showingNavigationDropdown = ! showingNavigationDropdown"
-                                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-700 focus:outline-none focus:bg-gray-900 focus:text-gray-500 transition duration-150 ease-in-out">
-                            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                <path :class="{'hidden': showingNavigationDropdown, 'inline-flex': ! showingNavigationDropdown }" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                                <path :class="{'hidden': ! showingNavigationDropdown, 'inline-flex': showingNavigationDropdown }" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Responsive Navigation Menu -->
-            <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}"
-                 class="sm:hidden absolute w-full inset-x-0 transition transform bg-gray-800 shadow-lg">
-                <div class="pt-2 pb-3 space-y-1 shadow">
-                    <ul>
-                        <li>
-                            <jet-responsive-nav-link :href="route('home')" :active="route().current('home')">
-                                Home
-                            </jet-responsive-nav-link>
-                        </li>
-                        <li>
-                            <jet-responsive-nav-link href="#menu-1">
-                                Menu 1
-                            </jet-responsive-nav-link>
-                        </li>
-                        <li>
-                            <jet-responsive-nav-link href="#menu-2">
-                                Menu 2
-                            </jet-responsive-nav-link>
-                        </li>
-                        <li>
-                            <jet-responsive-nav-link href="#menu-3">
-                                Menu 3
-                            </jet-responsive-nav-link>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
-
-        <!-- Page Heading -->
-        <header class="shadow">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                <slot name="header"></slot>
-            </div>
-        </header>
 
         <!-- Page Content -->
         <main>
@@ -94,7 +38,7 @@
         </main>
 
         <!-- Page Footer -->
-        <footer class="bg-black">
+        <footer class="">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 <slot name="footer"></slot>
                 <div class="sm:flex justify-between">

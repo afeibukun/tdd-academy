@@ -46,7 +46,7 @@ return [
     |
     */
 
-    'username' => 'email',
+    'username' => 'username',
 
     'email' => 'email',
 
@@ -141,4 +141,13 @@ return [
         ]),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Path
+    |--------------------------------------------------------------------------
+    |
+    | Change the prefix path for the alternate routes.
+    |
+    */
+    'path' => 'alt', // change alt to your preferred route.
 ];
