@@ -15,6 +15,8 @@ Vue.use(InertiaApp);
 Vue.use(InertiaForm);
 Vue.use(PortalVue);
 
+Vue.config.ignoredElements = [/^ion-/];
+
 const app = document.getElementById('app');
 
 new Vue({

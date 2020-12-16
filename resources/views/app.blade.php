@@ -18,6 +18,7 @@
         <!-- Scripts -->
         @routes
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     </head>
     <body class="font-sans antialiased">
         @inertia
