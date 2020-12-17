@@ -46680,7 +46680,7 @@ var render = function() {
                         "jet-nav-link",
                         {
                           staticClass:
-                            "px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                            "px-3 py-4 lg:py-2 flex items-center text-xs uppercase lg:bg-yellow-500 lg:text-white lg:border-b-0 lg:rounded lg:hover:shadow-sm lg:hover:text-gray-200 lg:hover:bg-yellow-600 lg:leading-none font-bold",
                           attrs: { href: "#sign-up" }
                         },
                         [_vm._v("Sign Up\n                    ")]

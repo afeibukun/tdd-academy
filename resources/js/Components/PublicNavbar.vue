@@ -53,7 +53,7 @@
 
                     <li class="flex items-center">
                         <jet-nav-link href="#sign-up"
-                                      class="px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">Sign Up
+                                      class="px-3 py-4 lg:py-2 flex items-center text-xs uppercase lg:bg-yellow-500 lg:text-white lg:border-b-0 lg:rounded lg:hover:shadow-sm lg:hover:text-gray-200 lg:hover:bg-yellow-600 lg:leading-none font-bold">Sign Up
                         </jet-nav-link>
                     </li>
                 </ul>
